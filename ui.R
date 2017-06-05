@@ -23,21 +23,9 @@ shinyUI(fluidPage(
       selectInput("course",
                   "Course :",
                   c("All",
-                  unique(as.character(abc$Course)))),
+                  unique(as.character(abc$Course))))
       
-       sliderInput("fees",
-                  "Range of fees in Ringgit Malaysia (RM) :",
-                   min = 1000,
-                   max = 50000,
-                   value = c(1000,5000),
-                   width = 4000),
       
-      sliderInput("pointer",
-                  "CGPA :",
-                  min = 2.0,
-                  max = 4.0,
-                  value = 0.5,
-                  step = 0.1)
       
       #actionButton("goButton", "Submit")
     
